@@ -1,127 +1,345 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
-    <title>Margate Brown IT Consult</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Home - Margate Brown IT Consulting</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="top">
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
+    <!-- Spinner End -->
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <!-- <img src="images/logo.svg" alt="Homepage"> -->
-                <h3 style="color: bisque;">Margate Brown IT Consult</h3>
+    <!-- Header Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+            <a href="index.html" class="navbar-brand ms-lg-0">
+                <img src="img/logo.png" alt="logo" width="250" height="150">
             </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Courses</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Compliance Analyst</a>
+                            <a href="#" class="dropdown-item">Information Security Risk Analyst</a>
+                            <a href="#" class="dropdown-item">Cybersecurity Risk Analyst</a>
+                            <a href="#" class="dropdown-item">Internal Auditor</a>
+                            <a href="#" class="dropdown-item">Third-Party Risk Analyst</a>
+                            <a href="#" class="dropdown-item">AI Governance, Risk & Compliance</a>
+                            <a href="#" class="dropdown-item">AI Risk Assessment</a>
+                            <a href="#" class="dropdown-item">Python For Beginners</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">NCFE Courses</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Introduction To Cyber Security</a>
+                            <a href="#" class="dropdown-item">Threat Intelligence in Cyber Security</a>
+                            <a href="#" class="dropdown-item">Understanding Legislation and Ethical Conduct within Cyber Security</a>
+                            <a href="#" class="dropdown-item">Cyber Security Testing, Vulnerabilities and Control</a>
+                            <a href="#" class="dropdown-item">NCFE Level 2 Certificate in the Principles of Cyber Security</a>
+                            <a href="#" class="dropdown-item">NCFE Level 3 Technical Occupational Entry in Cyber Security(Diploma)</a>
+                            <a href="#" class="dropdown-item">NCFE Level 3 Certificate in Cyber Security Practices</a>
+                            <a href="#" class="dropdown-item">NCFE Level 4 Diploma: Cyber Security Engineer</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a class="btn btn-outline-primary border-2" href="contact.html">Talk To Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/margate-brown-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Welcome</h5>
+                                <h1 class="display-1">Margate Brown IT Consulting</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">At Margate Brown IT Consulting, we transform learners into experts, 
+                            <br>ensuring you are ready to hit the ground running from day one.</p>
+                        <a href="about.html" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">About Us</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/margate-brown-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Welcome</h5>
+                                <h1 class="display-1">Practical Cybersecurity Courses</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">Our curriculum is built around the actual tools and <br>
+                             scenarios that you will encounter on the job.</p>
+                        <a href="service.html" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">Our Services</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
+    <!-- Header End -->
 
-        <div class="header-email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path
-                    d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" />
-            </svg>
-            <!-- <a href="mailto:admin@havilah-med.com">admin@havilah-med.com</a> -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-secondary">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 pb-0 pb-lg-5 py-5">
+                    <div class="pb-0 pb-lg-5 py-5">
+                        <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="title-left">
+                                <h5>History</h5>
+                                <h1>About Us</h1>
+                            </div>
+                        </div>
+                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                            At <span class="text-primary">Margate Brown IT Consulting</span>, we believe that the best way to defend the digital frontier is by doing, not just
+                            reading. We are a premier IT consultancy and training provider dedicated to bridging the gap between theoretical
+                            knowledge and real-world application in Cyber Security.
+                        </p>
+                        <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i>Adaptable and Up-to-Date Curriculum.
+                            </li>
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Effective Learning Methodologies.
+                            </li>
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Industry-Experienced Instructors.
+                            </li>
+                        </ul>
+                        <div class="row wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-6">
+                                <a href="#!" class="btn btn-outline-primary border-2 py-3 w-100">Enroll Now</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#!" class="btn btn-primary py-3 w-100">Schedule A Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/margate-brown-7.jpg" alt="">
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- About End -->
 
-    </header> <!-- end s-header -->
 
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro s-intro--particles">
-
-        <div id="particles-js" class="intro-particles"></div>
-
-        <div class="grid-overlay">
-            <div></div>
+    <!-- Courses Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Courses</h5>
+                        <h1>Our Hands-On Courses</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/margate-brown-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">Introduction To Cyber Security</h3>
+                            <p class="mb-4">In today's connected world, cyber security is essential for individuals and organizations alike. The
+                                NCFE Introduction to Cyber Security course provides a clear, practical starting point for understanding how to
+                                protect data, systems, and online identities from evolving threats.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#!">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/margate-brown-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">Cyber Security Testing, Vulnerabilities & Controls</h3>
+                            <p class="mb-4">Cyber threats are evolving every day, and organizations must stay ahead to protect sensitive data,
+                                systems, and networks. Our NCFE-aligned Cyber Security Testing, Vulnerabilities and Control program provides the
+                                knowledge and practical skills needed to identify risks, strengthen defenses, and ensure compliance with industry
+                                standards.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#!">Read More <i
+                                    class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/margate-brown-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">NCFE Level 2 Certificate in the Principles of Cyber Security</h3>
+                            <p class="mb-4">Cyber security is one of the fastest-growing fields in today's digital economy. The NCFE Level 2
+                                Certificate in the Principles of Cyber Security equips learners with essential skills to understand, prevent, and
+                                respond to cyber threats. This nationally recognized qualification provides a solid foundation for anyone looking to
+                                build a career in IT security or enhance workplace cyber awareness.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#!">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/margate-brown-6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">NCFE Level 4 Diploma: Cyber Security Engineer</h3>
+                            <p class="mb-4">The NCFE Level 4 Diploma: Cyber Security Engineer is designed for learners who want to take their cyber
+                                security expertise to the next level. This qualification provides advanced technical knowledge and hands-on skills
+                                to prepare you for specialist roles in protecting systems, networks, and data against complex cyber threats.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#!">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="row intro-content">
-
-            <div class="column">
-
-                <div class="intro-content__text">
-
-                    <h3>
-                        Coming Soon
-                    </h3>
-
-                    <h1>
-                        Get ready everyone. <br>
-                        We are currently <br>
-                        working on <br>
-                        our website.
-                    </h1>
-
-                </div> <!-- end intro-content__text -->
-
-            </div> <!-- end column -->
-
-        </div> <!--  end intro-content -->
+    </div>
+    <!-- Courses End -->
 
 
-        <ul class="intro-social">
-            <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-        </ul> <!-- end intro social -->
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-0 justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="title-center">
+                            <h5>Enroll</h5>
+                            <h1>Want to be Part of Us?</h1>
+                        </div>
+                    </div>
+                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s">Sign up to receive updates and exclusive offers.</p>
+                    <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
+                        <input class="form-control border-0 bg-light rounded-pill w-100 py-4 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2"
+                            style="margin-top: 7px;">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
 
-        <div class="intro-scroll">
-            <a href="#" class="scroll-link smoothscroll">
-                Margate Brown IT Consult
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <a href="index.html">
+                <h1 class="display-4 mb-3 text-white text-uppercase">
+                    <img src="img/logo.png" alt="" width="250" height="150">
+                </h1>
             </a>
-        </div> <!-- end intro scroll -->
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
+                        class="fab fa-x-twitter"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
+                        class="fab fa-youtube"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; <a class="border-bottom" href="#">Margate Brown IT Consulting</a>, All Right Reserved.</p>
+            <p class="mb-0">Developed By <a class="border-bottom" href="">John Myers</a>. </p>
+        </div>
+    </div>
+    <!-- Footer End -->
 
-    </section> <!-- end s-intro -->
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/particle-settings.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
 </body>
+
+</html>
